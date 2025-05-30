@@ -1,0 +1,94 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 1. Fix for scrollbars hiding borders */
+.scrollable::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.6);
+  border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(85, 85, 85, 0.8);
+}
+
+/* Remove number input spinners for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove number input spinners for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Hide default dropdown arrow */
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  list-style: none; /* For Firefox */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none; /* removes the ring if Tailwind or other styles apply it */
+}
+
+
+.homepage_bg {
+    background:  url('../src/assets/Images/bghome.svg');
+}
+.spinner {
+    width: 11.2px;
+    height: 11.2px;
+    border-radius: 11.2px;
+    box-shadow: 28px 0px 0 0 rgba(246,246,255,0.2), 22.7px 16.5px 0 0 rgba(246,246,255,0.4), 8.68px 26.6px 0 0 rgba(246,246,255,0.6), -8.68px 26.6px 0 0 rgba(246,246,255,0.8), -22.7px 16.5px 0 0 #f6f6ff;
+    animation: spinner-b87k6z 1s infinite linear;
+  }
+  
+  @keyframes spinner-b87k6z {
+      to {
+        transform: rotate(360deg);
+      }
+  }
+
+  .video-react .video-react-big-play-button {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !important;
+}
+
+.founding-story{
+  background : linear-gradient(161deg, rgba(157, 118, 91, 1) 0%, rgba(199, 69, 69, 1) 54%, rgba(134, 73, 175, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.our-vision{
+  background: linear-gradient(161deg, rgba(220, 104, 11, 1) 36%, rgba(175, 167, 73, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.our-mission{
+  background: linear-gradient(168deg, rgba(8, 150, 178, 1) 35%, rgba(147, 213, 223, 1) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+

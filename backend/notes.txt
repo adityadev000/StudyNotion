@@ -1,0 +1,39 @@
+hw - > 
+conatct us page -> 2things 
+1. mail kro uss bachhe ko ki  your form has been submittedd
+2. mail kro khud ko ki iss bachhe ne ye query dali  h 
+
+
+****************************TESTING*****************************************
+1. sendOtp -> 1
+2. signUp -> 1
+3. login -> 1
+
+4. updateDisplayPicture -> 1
+5. getUser -> 1
+6.updateProfile -> 1
+6.resetPasswordToken -> 1 
+7.resetPassword -> 1 
+8.createCategory -> 1
+9.getAllCategories -> 1 
+
+10.createCourse -> 1
+11.addSection -> 1
+13.addSubSection -> 1
+14.getCourseDetail -> 1
+15.deleteAccount -> 1
+16.updateSection -> 1
+17.deleteSection -> 1 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -67,6 +67,9 @@ exports.sendOtp = async(req , res ) => {
 
         //fetch email from req ki body se 
         const {email , password } = req.body ;
+
+        console.log(email , " " , password ) ; 
+
         //agar user pahhle se exist krta h to return 401 
         const checkUserPresent = await User.findOne({email}) ; 
 
@@ -77,6 +80,7 @@ exports.sendOtp = async(req , res ) => {
             })
         }
 
+        console.log("new user ayya h ") ; 
         //chk password condition 
         const passwordAuth = passwordAuthenticate(password) ; 
         if(!passwordAuth){
@@ -86,6 +90,7 @@ exports.sendOtp = async(req , res ) => {
             })
         }
 
+        console.log("password conditon checked " ) ; 
 
         //ek unique otp generate kro.
         var otp = otpGenerator.generate(6 , {
@@ -95,8 +100,9 @@ exports.sendOtp = async(req , res ) => {
         })
         // console.log('otp genenrated ',otp);
 
+        
         let result = await Otp.findOne({otp : otp }) ; 
-
+        
         while(result){
             otp = otpGenerator.generate(6 , {
                 upperCaseAlphabets : false ,
@@ -106,6 +112,7 @@ exports.sendOtp = async(req , res ) => {
             result = await Otp.findOne({otp : otp }) ;
         }
 
+        console.log("otp generated") ;
         //otp ka ek payload create kiya
         const otpPayload = {email , otp} ; 
         //db ke andr entry bano otp ke liye 

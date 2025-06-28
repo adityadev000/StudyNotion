@@ -1,4 +1,18 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.DS_Store
+
+setting.json
+
+node_modules
+
+# package-lock.json
+# package.json
+# postcss.config.js
+# tailwind.config.js
+
+README.md
+frontend/.env
+backend/.env
 
 # dependencies
 /node_modules
@@ -9,7 +23,7 @@
 /coverage
 
 # production
-/build
+frontend/build
 
 # misc
 .DS_Store

@@ -11,8 +11,7 @@ node_modules
 # tailwind.config.js
 
 README.md
-frontend/.env
-backend/.env
+.env
 
 # dependencies
 /node_modules

@@ -101,7 +101,7 @@ const Navbar = () => {
 
                                                     <div className=' absolute left-[46%] top-0 h-10 w-10 md:w-20 md:h-20 rotate-45 rounded bg-richblack-5 select-none -z-10 '></div>
                                                     {
-                                                        category.length ?  (
+                                                        category?.length ?  (
                                                                 category.map((sublink , index ) => (
                                                                     <Link key={index} to={`/catalog/${sublink.name.split(" ").join("-")}`}>
                                                                         <div className=' py-4 font-medium px-3 text-lg hover:bg-richblack-25 rounded-md 

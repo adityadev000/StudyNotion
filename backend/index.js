@@ -28,7 +28,7 @@ app.use(express.json()) ;
 app.use(cookieParser()) ;
 app.use(
     cors({
-        origin : "https://studynotion-frontend-olive-beta.vercel.app" , 
+        origin : process.env.FRONTEND_URL , 
         credentials : true , 
     })
 )

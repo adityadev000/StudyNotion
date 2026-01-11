@@ -6,7 +6,7 @@ const mailSender = require("../utils/mailSender");
 const crypto = require("crypto");
 //course enrolment template
 const {courseEnrollmentEmail} = require("../mail/templates/courseEnrollmentEmail") ;
-const {sendPaymentSuccessfulEmail} = require("../mail/templates/paymentSuccessEmail")
+const {paymentSuccessEmail} = require("../mail/templates/paymentSuccessEmail")
 const dotenv = require("dotenv") ;
 const CourseProgress = require("../models/CourseProgress");
 dotenv.config() ; 
